@@ -3,7 +3,7 @@
 PathDeep is a deep neural network that has biological functional links between gene nodes and pathway nodes which discriminates cancer from normal tissues. The overall scheme of the PathDeep is emphasized in the following figure:
 
 
-![KakaoTalk_Photo_2021-09-30-14-52-44](https://user-images.githubusercontent.com/51738181/135395285-cd8d9c84-965c-40c8-b801-fdb025d0f0b8.png)
+![KakaoTalk_Photo_2021-10-06-14-56-36](https://user-images.githubusercontent.com/51738181/136148176-e36081df-fff0-407b-a564-33ca455b3e0a.png)
 
 
 
