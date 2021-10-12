@@ -36,6 +36,17 @@ def gmt_to_dictionary(filename):
 raw_data=pd.read_csv("./data/Toy_data_for_PathDeep.csv")
 
 
+K.clear_session()
+
+from keras.models import model_from_json 
+json_file = open("./result/PathDeep_structure.json", "r")
+
+loaded_model_json = json_file.read() 
+json_file.close()
+loaded_model = model_from_json(loaded_model_json)
+
+loaded_model.load_weights("./result/PathDeep_weight.h5")
+
 
 pathway_lst=['c2_reactome']#,'c2_kegg','c4_cgn','c1_positional', 'c2_cgp', 'c2_cp_biocarta', 'c2_cp', 'c3_mir', 'c3_tft','c4_cm', 'c5_GO_bp', 'c5_GO_cc', 'c5_GO_mf', 'c6_oncogenic_signatures', 'c7_immunologic_signatures']
 
@@ -62,7 +73,6 @@ for p_lst in pathway_lst:
         for value in values : 
             if value in raw_dict.keys():
                 gene_idx[key].append(raw_dict[value])
-
 
 
 
@@ -107,6 +117,7 @@ for i in range(len(pathways)):
 
 pathway_contribution_gene_index=df(abs(pcgi_mat.sum(axis=1)/len(raw_data))).sort_values([0],ascending=0)
 pathway_contribution_gene_index.columns=['index']
+
 
 
 
