@@ -13,11 +13,14 @@ More detailed explaination of the PathDeep can be found in the manuscript.
 
 # Data explanation
 
-./data/Toy_data_for_PathDeep.csv file consists of 100 cancer tissue and normal tissue, and contains reactome member genes.
-There are 20 sets of train and test samples in ./data/Train_Test_Sets/Train/ folder and ./data/Train_Test_Sets/Test/ folder respectively.
+./data/Toy_data_for_PathDeep.csv
+This file consist of 100 cancer tissue and normal tissue, and contains reactome member genes.
+
+./data/Train_Test_Sets/Train, ./data/Train_Test_Sets/Test
+There are 20 sets of train and test samples.
 
 
-# Code explanation 
+# PathDeep training code explanation 
  
 When the PathDeep example code is executed, the cancer and normal discrimination performance of PathDeep performed in each hyperparameter is created in ./result/PathDeep_performance.csv.
 
