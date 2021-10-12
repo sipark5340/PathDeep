@@ -29,10 +29,15 @@ PathDeep's model structure and weights are stored in the './result' folder.
 To run this code, the pre-requisites are as follow: 
 
 Python 2.7
+
 TensorFlow 1.14.0
+
 NumPy 1.17.3
+
 Pandas 0.25.2
+
 Keras 2.3.1
+
 
 
 # Extract PathDeep gene pathway index code explanation
