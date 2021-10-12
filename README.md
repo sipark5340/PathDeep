@@ -14,17 +14,17 @@ More detailed explaination of the PathDeep can be found in the manuscript.
 # Data explanation
 
 ./data/Toy_data_for_PathDeep.csv
-This file consist of 100 cancer tissue and normal tissue, and contains reactome member genes.
+This file consist of 100 cancer tissue and 100 normal tissue and reactome member genes.
 
 ./data/Train_Test_Sets/Train, ./data/Train_Test_Sets/Test
 There are 20 sets of train and test samples.
 
 
-# PathDeep training code explanation 
+# PathDeep example code explanation 
  
 When the PathDeep example code is executed, the cancer and normal discrimination performance of PathDeep performed in each hyperparameter is created in ./result/PathDeep_performance.csv.
 
-PathDeep's model structure and weights are stored in the './model/structure' folder and the './model/weight' folder, respectively.
+PathDeep's model structure and weights are stored in the './result' folder.
 
 To run this code, the pre-requisites are as follow: 
 
@@ -33,5 +33,8 @@ TensorFlow
 NumPy
 Pandas
 Keras
+
+
+# Extract PathDeep gene pathway index code explanation
 
 
