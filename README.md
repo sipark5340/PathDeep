@@ -38,7 +38,10 @@ Keras 2.3.1
 # Extract PathDeep gene pathway index code explanation
 
 
-'''c
+```c
+
+code section
+...
 
 
-'''
+```
