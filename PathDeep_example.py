@@ -211,7 +211,7 @@ for p_lst in pathway_lst:
                         else: count=count+1
 
                     model_json = model.to_json()
-                    with open("./model/structure/"+p_lst+
+                    with open("./result/"+p_lst+
                               "_index_"+str(index)+
                               "_node_"+str(nodes_list[0])+
                               "_batch_size_"+str(batch_size)+
@@ -219,7 +219,7 @@ for p_lst in pathway_lst:
                               ".json", "w") as json_file : 
                         json_file.write(model_json)
 
-                    model.save_weights("./model/weight/"+p_lst+
+                    model.save_weights("./result/"+p_lst+
                                        "_index_"+str(index)+
                                        "_node_"+str(nodes_list[0])+
                                        "_batch_size_"+str(batch_size)+
