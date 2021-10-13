@@ -21,9 +21,11 @@ Reference of our manuscript
 --------------------------------------------------------------------------------
 ## Contents ##
 * [Data explanation](https://github.com/sipark5340/PathDeep/blob/main/README.md#data-explanation)
-* [Code block explanation](https://github.com/sipark5340/PathDeep/blob/main/README.md#)
-
-
+* [Code block explanation](https://github.com/sipark5340/PathDeep/blob/main/README.md#pathdeep_examplepy-code-block-explanation)
+    * [Source code block #1](#output-files)
+    * [Source code block #2](#output-files)
+    * [Source code block #3](#output-files)
+    * [Output result files](#output-files)
 
 
  
