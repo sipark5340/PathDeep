@@ -17,6 +17,8 @@ More detailed explaination of the PathDeep can be found in the manuscript.
 
 -> This file consist of 100 cancer tissue and 100 normal tissue and reactome member genes.
 
+Please click [here](https://xenabrowser.net/datapages/?dataset=TcgaTargetGtex_rsem_gene_fpkm&host=https%3A%2F%2Ftoil.xenahubs.net&removeHub=https%3A%2F%2Fxena.treehouse.gi.ucsc.edu%3A443) to download full data source.
+
 ```./data/Train_Test_Sets/Train/~.csv```, ```./data/Train_Test_Sets/Test/~.csv```
 
 -> There are 20 sets of train and test samples.
