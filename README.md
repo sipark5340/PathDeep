@@ -59,8 +59,8 @@ Generate gene index dictionary
 
 ex) gene_idx = {EGFR : [1], PLA2G10 : [2], ... } 
 
-- pathway : dictionary that contains gene to pathway linkage information.
-- gene_idx : gene index dictionary
+- ```pathway``` : dictionary that contains gene to pathway linkage information.
+- ```gene_idx``` : gene index dictionary
 
 
 ### Source code block #2
@@ -77,8 +77,8 @@ for geneset , idx in gene_idx.items():
 ```
 
 This part makes the gene expression matrix as an input shape of PathDeep.
-- ```csubtrains``` : data set for training PathDeep.
-- ```csubtests``` : data set for testing PathDeep performance.
+- ```subtrains``` : data set for training PathDeep.
+- ```subtests``` : data set for testing PathDeep performance.
 
 
 ### Source code block #3
@@ -118,9 +118,9 @@ model = Model(inputs = input_items, output = predictions)
 
 This part is for structuring PathDeep
 
-- input_items : contains gene to pathway linkage list 
-- geneset_layers : pathway layer nodes list
-- geneset_merged : pathway layer (concatanated pathway layer nodes)
+- ```input_items``` : contains gene to pathway linkage list 
+- ```geneset_layers``` : pathway layer nodes list
+- ```geneset_merged``` : pathway layer (concatanated pathway layer nodes)
 
 
 # Expected output result file
