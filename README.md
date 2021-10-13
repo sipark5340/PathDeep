@@ -44,7 +44,7 @@ To run this code, the pre-requisites are as follow:
 - Keras 2.3.1
 
 
-
+#### Source code block #1
 ```c
 gene_idx = {}
 for key,values in pathway.items():
@@ -58,7 +58,7 @@ Generate gene index dictionary (Ex = {EGFR : [1], PLA2G10 : [2], ... }
 
 
 
-
+#### Source code block #2
 ```c
 subtrains =[]
 subtests = []
