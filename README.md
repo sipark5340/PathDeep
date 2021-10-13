@@ -123,14 +123,24 @@ This part is for structuring PathDeep
 - ```geneset_merged``` : pathway layer (concatanated pathway layer nodes)
 
 
-# Expected output result file
+### Output result files
 
+PathDeep generates two types of output files: performance and model.
 
-|index|c2_reactome|...|test_spe|test_auc|
-|------|---|---|---|---|
-|1|c2_reactome|...|0.9927869537946895|0.9952615272462183|
-|2|c2_reactome|...|0.9943550073175831|0.9963550209586295|
-|3|c2_reactome|...|0.9932051014007944|0.9936212866776016|
+   1. Performance result file
+      - ```./result/PathDeep_performance.csv``` : This file contains PathDeep performance (Accuracy, sensitivity, specificity, AUC)
+      
+      Example)
+      
+      |index|c2_reactome|...|test_spe|test_auc|
+      |------|---|---|---|---|
+      |1|c2_reactome|...|0.9927869537946895|0.9952615272462183|
+      |2|c2_reactome|...|0.9943550073175831|0.9963550209586295|
+      |3|c2_reactome|...|0.9932051014007944|0.9936212866776016|
+
+   2. PathDeep model structure, weight
+      - ```./result/~.json``` : This file contains structure of trained PathDeep.
+      - ```./result/~.h5``` : This file contains weight of trained PathDeep.
 
 
 
