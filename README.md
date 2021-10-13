@@ -15,11 +15,11 @@ More detailed explaination of the PathDeep can be found in the manuscript.
 
 ./data/Toy_data_for_PathDeep.csv
 
-- This file consist of 100 cancer tissue and 100 normal tissue and reactome member genes.
+-> This file consist of 100 cancer tissue and 100 normal tissue and reactome member genes.
 
 ./data/Train_Test_Sets/Train, ./data/Train_Test_Sets/Test
 
-- There are 20 sets of train and test samples.
+-> There are 20 sets of train and test samples.
 
 
 # PathDeep example code explanation 
@@ -30,15 +30,15 @@ PathDeep's model structure and weights are stored in the './result' folder.
 
 To run this code, the pre-requisites are as follow: 
 
-Python 2.7
+- Python 2.7
 
-TensorFlow 1.14.0
+- TensorFlow 1.14.0
 
-NumPy 1.17.3
+- NumPy 1.17.3
 
-Pandas 0.25.2
+- Pandas 0.25.2
 
-Keras 2.3.1
+- Keras 2.3.1
 
 
 
