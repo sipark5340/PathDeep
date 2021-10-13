@@ -151,11 +151,11 @@ When the Extract_PathDeep_gene_pathway_index.py is executed, user can obtain pat
 
 These result are saved in below files.
 
-   1. pathway index
-      - ```./result/PathDeep_performance.csv```
-
-   2. pathway contribution gene index
-      - ```./result/PathDeep_performance.csv```
+   1. pathway contribution gene index
+      - ```./result/Pathway_contribution_gene_index.csv```
+   
+   2. pathway index
+      - ```./result/pathway_index.csv```
 
 
 ### Source code block #1
@@ -171,7 +171,10 @@ loaded_model = model_from_json(loaded_model_json)
 loaded_model.load_weights("./result/~.h5")
 ```
 
-This part is for structuring PathDeep
+
+
+This is load PathDeep structure and weight.
+
 
 code section
 
