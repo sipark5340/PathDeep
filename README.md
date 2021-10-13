@@ -17,7 +17,7 @@ More detailed explaination of the PathDeep can be found in the manuscript.
 
 -> This file consist of 100 cancer tissue and 100 normal tissue and reactome member genes.
 
-```./data/Train_Test_Sets/Train/~```, ```./data/Train_Test_Sets/Test/~```
+```./data/Train_Test_Sets/Train/~.csv```, ```./data/Train_Test_Sets/Test/~.csv```
 
 -> There are 20 sets of train and test samples.
 
