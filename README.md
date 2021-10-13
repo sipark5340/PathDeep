@@ -45,6 +45,35 @@ To run this code, the pre-requisites are as follow:
 
 
 
+```c
+gene_idx = {}
+for key,values in pathway.items():
+    gene_idx[key] = []
+    for value in values : 
+        if value in raw_dict.keys():
+            gene_idx[key].append(raw_dict[value])
+```
+
+Generate gene index dictionary (Ex = {EGFR : [1], PLA2G10 : [2], ... } 
+
+
+
+
+```c
+subtrains =[]
+subtests = []
+for geneset , idx in gene_idx.items():
+    if idx :
+        subtrain_x = train_x[:, idx]
+        subtrains.append(subtrain_x)
+        subtest_x = test_x[:, idx]
+        subtests.append(subtest_x)
+
+```
+
+This code is the code that makes the gene expression expression of the sample as an input of PathDeep.
+
+
 # Extract PathDeep gene pathway index code explanation
 
 
