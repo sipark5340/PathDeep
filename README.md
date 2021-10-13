@@ -20,8 +20,8 @@ Reference of our manuscript
 <
 --------------------------------------------------------------------------------
 ## Contents ##
-* [Data explanation](#data explanation)
-* [Code block explanation](#data explanation)
+* [Data explanation](https://github.com/sipark5340/PathDeep/blob/main/README.md#data-explanation)
+* [Code block explanation](https://github.com/sipark5340/PathDeep/blob/main/README.md#)
 
 
 
