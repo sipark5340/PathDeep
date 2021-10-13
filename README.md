@@ -19,16 +19,16 @@ Reference of our manuscript
 <
 <
 --------------------------------------------------------------------------------
-# Contents
-[Data explanation](https://github.com/sipark5340/PathDeep/edit/main/README.md, "Data explanation")
-
+## Contents ##
+* [Data explanation](#data explanation)
+* [Code block explanation](#data explanation)
 
 
 
 
  
 
-# Data explanation
+## Data explanation ##
 
 ```./data/Toy_data_for_PathDeep.csv```
 
@@ -44,7 +44,7 @@ Please click [here](https://xenabrowser.net/datapages/?dataset=TcgaTargetGtex_rs
 
 -> There are 15 sets of molecular signature collections that contain biological relationship informations.
 
-# ```PathDeep_example.py``` code block explanation 
+## ```PathDeep_example.py``` code block explanation ## 
  
 When the ```PathDeep_example.py``` is executed, the cancer and normal discrimination performance of PathDeep performed in each hyperparameter is created in ```./result/PathDeep_performance.csv.```
 
