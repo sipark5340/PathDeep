@@ -57,6 +57,8 @@ for key,values in pathway.items():
 
 Generate gene index dictionary (Ex = {EGFR : [1], PLA2G10 : [2], ... } 
 
+- pathway : dictionary that contains gene to pathway linkage information.
+- gene_idx : gene index dictionary
 
 
 ### Source code block #2
@@ -73,6 +75,8 @@ for geneset , idx in gene_idx.items():
 ```
 
 This part makes the gene expression expression as an input shape of PathDeep.
+- subtrains : data set for training PathDeep.
+- subtests : data set for testing PathDeep performance.
 
 
 ### Source code block #3
@@ -117,16 +121,19 @@ This part is for structuring PathDeep
 - geneset_merged : pathway layer (concatanated pathway layer nodes)
 
 
+# Expected output result file
+|index|c2_reactome|...|test_spe|test_auc|
+|1|c2_reactome|...|0.9927869537946895|0.9952615272462183|
+|2|c2_reactome|...|0.9943550073175831|0.9963550209586295|
+|3|c2_reactome|...|0.9932051014007944|0.9936212866776016|
+
+
+
+
 # Extract PathDeep gene pathway index code explanation
 
 
 code section
 
-
-|제목|내용|설명|
-|------|---|---|
-|테스트1|테스트2|테스트3|
-|테스트1|테스트2|테스트3|
-|테스트1|테스트2|테스트3|
 
 
