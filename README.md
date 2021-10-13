@@ -44,7 +44,8 @@ To run this code, the pre-requisites are as follow:
 - Keras 2.3.1
 
 
-#### Source code block #1
+### Source code block #1
+
 ```c
 gene_idx = {}
 for key,values in pathway.items():
@@ -58,7 +59,8 @@ Generate gene index dictionary (Ex = {EGFR : [1], PLA2G10 : [2], ... }
 
 
 
-#### Source code block #2
+### Source code block #2
+
 ```c
 subtrains =[]
 subtests = []
@@ -68,10 +70,51 @@ for geneset , idx in gene_idx.items():
         subtrains.append(subtrain_x)
         subtest_x = test_x[:, idx]
         subtests.append(subtest_x)
-
 ```
 
-This part makes the gene expression expression of the sample as an input of PathDeep.
+This part makes the gene expression expression as an input shape of PathDeep.
+
+
+### Source code block #3
+
+```c
+count = 0
+input_items = []
+for geneset , idx in gene_idx.items():
+    if idx :
+        input_items.append(Input(shape=(len(subtrains[count][0]),), name = geneset))
+        count += 1
+
+geneset_layers = []
+
+for input_item in input_items :
+    geneset_layers.append(Dense(1 , activation='relu')(input_item))
+
+geneset_merged = Layer.concatenate(geneset_layers, axis=-1)
+
+i+=1
+hiddens = []
+count = 0
+
+for node in nodes_list :
+    if count == 0 :
+        dense = (Dense(node, activation='relu')(geneset_merged))
+        hiddens.append(Dropout(0.5)(dense))
+    else : 
+        dense = Dense(node, activation='relu')(hiddens[count-1])
+        hiddens.append(Dropout(0.5)(dense))
+
+    count +=1
+
+predictions = Dense(1, activation='sigmoid', name='predictions')(hiddens[-1])
+model = Model(inputs = input_items, output = predictions)
+```
+
+This part is for structuring PathDeep
+
+- input_items : contains gene to pathway linkage list 
+- geneset_layers : pathway layer nodes list
+- geneset_merged : pathway layer (concatanated pathway layer nodes)
 
 
 # Extract PathDeep gene pathway index code explanation
