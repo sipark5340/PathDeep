@@ -244,7 +244,7 @@ These result are saved in below files.
       - ```./result/pathway_index.csv```
 
       |sample|REACTOME_GLYCOGEN_BREAKDOWN_GLYCOGENOLYSIS|REACTOME_TRANSLATION|...|REACTOME_PYRIMIDINE_CATABOLISM|
-      |------|---|---|---|
+      |------|---|---|---|---|
       |GTEX-1117F-0226-SM-5GZZ7|1.5789|2.3467|...|-3.1363|
       |TCGA-AB-2859-03|0.2352|1.5673|...|-2.7634|
       |TCGA-CJ-4912-01|0.7242|-1.3764|...|3.3732|
