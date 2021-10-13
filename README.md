@@ -26,7 +26,7 @@ Reference of our manuscript
     * [Source code block #2](https://github.com/sipark5340/PathDeep/blob/main/README.md#source-code-block-2)
     * [Source code block #3](https://github.com/sipark5340/PathDeep/blob/main/README.md#source-code-block-3)
     * [Output result files](https://github.com/sipark5340/PathDeep/blob/main/README.md#output-result-files)
-* [PathDeep_gene_pathway_index.py code block explanation]()
+* [Extract_PathDeep_gene_pathway_index.py code block explanation]()
     * [Source code block #1]()
     * [Source code block #2]()
     * [Source code block #3]()
@@ -68,7 +68,7 @@ To run this code, the pre-requisites are as follow:
 - ```Keras 2.3.1```
 
 
-### Source code block #1
+### Source code block #1 ###
 
 ```c
 gene_idx = {}
@@ -87,7 +87,7 @@ ex) gene_idx = {EGFR : [1], PLA2G10 : [2], ... }
 - ```gene_idx``` : gene index dictionary
 
 
-### Source code block #2
+### Source code block #2 ###
 
 ```c
 subtrains =[]
@@ -107,7 +107,7 @@ This part makes the gene expression matrix as an ```input shape of PathDeep.```
 
 
 
-### Source code block #3
+### Source code block #3 ###
 
 ```c
 count = 0
@@ -149,7 +149,7 @@ This part is for ```structuring PathDeep```
 - ```geneset_merged``` : pathway layer (concatanated pathway layer nodes)
 
 
-### Output result files
+### Output result files ###
 
 PathDeep generates two types of output files: performance and model.
 
@@ -171,12 +171,12 @@ PathDeep generates two types of output files: performance and model.
 
 
 
-# Extract_PathDeep_gene_pathway_index.py code block explanation
+## ```Extract_PathDeep_gene_pathway_index.py``` code block explanation ##
 
 When the Extract_PathDeep_gene_pathway_index.py is executed, user can obtain pathway index and pathway contribution gene index.
 
 
-### Source code block #1
+### Source code block #1 ###
 
 ```c
 from keras.models import model_from_json 
@@ -195,7 +195,7 @@ This part is for ```loading PathDeep structure and weight```.
 - ```loaded_model.load_weights("./result/~.h5")``` : load weight and place it to PathDeep structure.
 
 
-### Source code block #2
+### Source code block #2 ###
 
 ```c
 pcgi_mat=df()
@@ -224,7 +224,7 @@ This part is for calculating ```pathway contribution gene index```.
 - ```pathway_contribution_gene_index``` : gene-wise average pathway contribution gene index matrix
 
 
-### Source code block #3
+### Source code block #3 ###
 
 
 ```c
@@ -246,7 +246,7 @@ This part is for calculating ```pathway index```.
 
 
 
-### Output result files
+### Output result files ###
 
 
 These result are saved in below files.
