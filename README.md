@@ -7,7 +7,24 @@ PathDeep is a deep neural network that has biological functional links between g
 
 
 
-More detailed explaination of the PathDeep can be found in the manuscript. 
+More detailed explaination of the PathDeep can be found in the manuscript.
+
+If you use the PathDeep algorithm, please cite our manuscript: 
+
+<
+<
+<
+Reference of our manuscript
+<
+<
+<
+--------------------------------------------------------------------------------
+# Contents
+[Data explanation](https://github.com/sipark5340/PathDeep/edit/main/README.md, "Data explanation")
+
+
+
+
 
  
 
