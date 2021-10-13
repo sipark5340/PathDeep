@@ -71,7 +71,7 @@ for geneset , idx in gene_idx.items():
 
 ```
 
-This code is the code that makes the gene expression expression of the sample as an input of PathDeep.
+This part makes the gene expression expression of the sample as an input of PathDeep.
 
 
 # Extract PathDeep gene pathway index code explanation
@@ -80,7 +80,12 @@ This code is the code that makes the gene expression expression of the sample as
 ```c
 
 code section
-...
 
 
-```
+|제목|내용|설명|
+|------|---|---|
+|테스트1|테스트2|테스트3|
+|테스트1|테스트2|테스트3|
+|테스트1|테스트2|테스트3|
+
+
