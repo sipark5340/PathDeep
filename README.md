@@ -77,8 +77,6 @@ This part makes the gene expression expression of the sample as an input of Path
 # Extract PathDeep gene pathway index code explanation
 
 
-```c
-
 code section
 
 
