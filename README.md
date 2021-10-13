@@ -222,6 +222,8 @@ This part is for calculating ```pathway index```.
 
 
 
+### Output result files
+
 
 These result are saved in below files.
 
@@ -241,16 +243,9 @@ These result are saved in below files.
    2. pathway index
       - ```./result/pathway_index.csv```
 
-
-
-This is load PathDeep structure and weight.
-
-
-code section
-
-
-|제목|내용|설명|
-|------|---|---|
-|테스트1|테스트2|테스트3|
-|테스트1|테스트2|테스트3|
-|테스트1|테스트2|테스트3|
+      |sample|REACTOME_GLYCOGEN_BREAKDOWN_GLYCOGENOLYSIS|REACTOME_TRANSLATION|...|REACTOME_PYRIMIDINE_CATABOLISM|
+      |------|---|---|---|
+      |GTEX-1117F-0226-SM-5GZZ7|1.5789|2.3467|...|-3.1363|
+      |TCGA-AB-2859-03|0.2352|1.5673|...|-2.7634|
+      |TCGA-CJ-4912-01|0.7242|-1.3764|...|3.3732|
+      |GTEX-ZYT6-0926-SM-5GIEM|-0.2674|-2.4731|...|1.7623|
