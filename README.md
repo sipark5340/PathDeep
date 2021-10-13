@@ -21,6 +21,9 @@ More detailed explaination of the PathDeep can be found in the manuscript.
 
 -> There are 20 sets of train and test samples.
 
+./data/pathways
+
+-> There are 15 sets of molecular signature collections that contain biological relationship informations.
 
 # PathDeep example code explanation 
  
