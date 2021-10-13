@@ -76,9 +76,11 @@ for geneset , idx in gene_idx.items():
         subtests.append(subtest_x)
 ```
 
+
 This part makes the gene expression matrix as an input shape of PathDeep.
 - ```subtrains``` : data set for training PathDeep.
 - ```subtests``` : data set for testing PathDeep performance.
+
 
 
 ### Source code block #3
@@ -128,7 +130,7 @@ This part is for structuring PathDeep
 PathDeep generates two types of output files: performance and model.
 
    1. Performance result file
-      - ```./result/PathDeep_performance.csv``` : This file contains PathDeep performance (Accuracy, sensitivity, specificity, AUC)
+      - ```./result/PathDeep_performance.csv``` : This file contains PathDeep performance (accuracy, sensitivity, specificity, AUC)
       
       Example)
       
@@ -153,6 +155,16 @@ These result are saved in below files.
 
    1. pathway contribution gene index
       - ```./result/Pathway_contribution_gene_index.csv```
+      
+      Example)
+      
+      |gene|index|
+      |------|---|
+      |PLAG10|1.149|
+      |SHC1|0.904|
+      |CDK1|0.846|
+      |CD4|0.779|
+      
    
    2. pathway index
       - ```./result/pathway_index.csv```
