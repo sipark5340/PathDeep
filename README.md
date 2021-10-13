@@ -25,9 +25,9 @@ More detailed explaination of the PathDeep can be found in the manuscript.
 
 -> There are 15 sets of molecular signature collections that contain biological relationship informations.
 
-# PathDeep example code explanation 
+# ```PathDeep_example.py``` code block explanation 
  
-When the PathDeep example code is executed, the cancer and normal discrimination performance of PathDeep performed in each hyperparameter is created in ./result/PathDeep_performance.csv.
+When the ```PathDeep_example.py``` is executed, the cancer and normal discrimination performance of PathDeep performed in each hyperparameter is created in ```./result/PathDeep_performance.csv.```
 
 PathDeep's model structure and weights are stored in the './result' folder.
 
@@ -145,8 +145,32 @@ PathDeep generates two types of output files: performance and model.
 
 
 
-# Extract PathDeep gene pathway index code explanation
+# Extract_PathDeep_gene_pathway_index.py code block explanation
 
+When the Extract_PathDeep_gene_pathway_index.py is executed, user can obtain pathway index and pathway contribution gene index.
+These result are saved in below files.
+
+   1. pathway index
+      - ```./result/PathDeep_performance.csv```
+
+   2. pathway contribution gene index
+      - ```./result/PathDeep_performance.csv```
+
+
+### Source code block #1
+
+```c
+from keras.models import model_from_json 
+json_file = open("./result/~.json", "r")
+
+loaded_model_json = json_file.read() 
+json_file.close()
+loaded_model = model_from_json(loaded_model_json)
+
+loaded_model.load_weights("./result/~.h5")
+```
+
+This part is for structuring PathDeep
 
 code section
 
