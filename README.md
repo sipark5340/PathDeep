@@ -77,8 +77,8 @@ for geneset , idx in gene_idx.items():
 ```
 
 This part makes the gene expression matrix as an input shape of PathDeep.
-- subtrains : data set for training PathDeep.
-- subtests : data set for testing PathDeep performance.
+- ```csubtrains``` : data set for training PathDeep.
+- ```csubtests``` : data set for testing PathDeep performance.
 
 
 ### Source code block #3
