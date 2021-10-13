@@ -55,7 +55,7 @@ for key,values in pathway.items():
             gene_idx[key].append(raw_dict[value])
 ```
 
-Generate gene index dictionary 
+Generate ```gene index dictionary```
 
 ex) gene_idx = {EGFR : [1], PLA2G10 : [2], ... } 
 
@@ -77,7 +77,7 @@ for geneset , idx in gene_idx.items():
 ```
 
 
-This part makes the gene expression matrix as an input shape of PathDeep.
+This part makes the gene expression matrix as an ```input shape of PathDeep.```
 - ```subtrains``` : data set for training PathDeep.
 - ```subtests``` : data set for testing PathDeep performance.
 
@@ -118,7 +118,7 @@ predictions = Dense(1, activation='sigmoid', name='predictions')(hiddens[-1])
 model = Model(inputs = input_items, output = predictions)
 ```
 
-This part is for structuring PathDeep
+This part is for ```structuring PathDeep```
 
 - ```input_items``` : contains gene to pathway linkage list 
 - ```geneset_layers``` : pathway layer nodes list
@@ -151,6 +151,78 @@ PathDeep generates two types of output files: performance and model.
 
 When the Extract_PathDeep_gene_pathway_index.py is executed, user can obtain pathway index and pathway contribution gene index.
 
+
+### Source code block #1
+
+```c
+from keras.models import model_from_json 
+json_file = open("./result/~.json", "r")
+
+loaded_model_json = json_file.read() 
+json_file.close()
+loaded_model = model_from_json(loaded_model_json)
+
+loaded_model.load_weights("./result/~.h5")
+```
+
+This part is for ```loading PathDeep structure and weight```.
+
+- ```loaded_model_json``` : PathDeep structure
+- ```loaded_model.load_weights("./result/~.h5")``` : load weight and place it to PathDeep structure.
+
+
+### Source code block #2
+
+```c
+pcgi_mat=df()
+
+for i in range(len(pathways)):
+    print(i+1)
+    print(list(gene_idx.keys())[i])
+    dense_name='dense_'+str(i+1)
+    sub_weights=model.get_layer(dense_name).get_weights()
+    sub_index=df(subdata[i]*sub_weights[0].transpose())
+    sub_index.columns=gene_names[i]
+    sub_sum=df(sub_index.sum())
+    sub_sum.columns=[list(gene_idx.keys())[i]]
+    
+    pcgi_mat=pd.concat([pcgi_mat,sub_sum],axis=1)
+
+pathway_contribution_gene_index=df(abs(pcgi_mat.sum(axis=1)/len(raw_data))).sort_values([0],ascending=0)
+pathway_contribution_gene_index.columns=['index']
+```
+
+This part is for calculating ```pathway contribution gene index```.
+
+- ```sub_weights``` : pathway (i) layer node weights.
+- ```sub_index``` : matrix product of pathway (i) member gene expressions and pathway (i) layer node weights.
+- ```pcgi_mat``` : pathway contribution gene index matrix (gene x sample)
+- ```pathway_contribution_gene_index``` : gene-wise average pathway contribution gene index matrix
+
+
+### Source code block #3
+
+
+```c
+pathway_layer=Model(inputs=model.inputs,outputs=model.get_layer('concatenate_1').output)
+pathway_index_mat=pathway_layer.predict(subdata)
+
+pathway_index_df=df(pathway_index_mat).transpose()
+pathway_index_df.index=pathway.keys()
+pathway_index_df.columns=raw_data['sample']
+
+sample_pathway_index_df=(pathway_index_df-pathway_index_df.mean())/pathway_index_df.std()
+```
+
+This part is for calculating ```pathway index```.
+
+- ```pathway_layer``` : Set pathway layer as output layer of PathDeep and save.
+- ```pathway_index_mat=pathway_layer.predict(subdata)``` : predict pathway index for samples.
+- ```sample_pathway_index_df``` : sample-wise normalized pathway index.
+
+
+
+
 These result are saved in below files.
 
    1. pathway contribution gene index
@@ -168,20 +240,6 @@ These result are saved in below files.
    
    2. pathway index
       - ```./result/pathway_index.csv```
-
-
-### Source code block #1
-
-```c
-from keras.models import model_from_json 
-json_file = open("./result/~.json", "r")
-
-loaded_model_json = json_file.read() 
-json_file.close()
-loaded_model = model_from_json(loaded_model_json)
-
-loaded_model.load_weights("./result/~.h5")
-```
 
 
 
