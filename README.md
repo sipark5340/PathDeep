@@ -55,7 +55,9 @@ for key,values in pathway.items():
             gene_idx[key].append(raw_dict[value])
 ```
 
-Generate gene index dictionary (Ex = {EGFR : [1], PLA2G10 : [2], ... } 
+Generate gene index dictionary 
+
+ex) gene_idx = {EGFR : [1], PLA2G10 : [2], ... } 
 
 - pathway : dictionary that contains gene to pathway linkage information.
 - gene_idx : gene index dictionary
@@ -74,7 +76,7 @@ for geneset , idx in gene_idx.items():
         subtests.append(subtest_x)
 ```
 
-This part makes the gene expression expression as an input shape of PathDeep.
+This part makes the gene expression matrix as an input shape of PathDeep.
 - subtrains : data set for training PathDeep.
 - subtests : data set for testing PathDeep performance.
 
