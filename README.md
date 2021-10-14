@@ -66,8 +66,8 @@ PathDeep generates three types of files: data and model.
 
 1. Data output file
    - [```./result/PathDeep_performance.csv```](https://github.com/sipark5340/PathDeep/blob/main/README.md#Output-result-files-1)
-   - [```./result/Pathway_contribution_gene_index.csv```](https://github.com/sipark5340/PathDeep/blob/main/README.md#Output-result-files-2,3)
-   - [```./result/pathway_index.csv```](https://github.com/sipark5340/PathDeep/blob/main/README.md#Output-result-files-2,3)
+   - [```./result/Pathway_contribution_gene_index.csv```](https://github.com/sipark5340/PathDeep/blob/main/README.md#Output-result-files-2-3)
+   - [```./result/pathway_index.csv```](https://github.com/sipark5340/PathDeep/blob/main/README.md#Output-result-files-2-3)
 
 2. Model output file
    - ```./result/~.json```
@@ -271,7 +271,7 @@ This part is for calculating ```pathway index```.
 
 
 
-### Output result files 2,3 ###
+### Output result files 2 3 ###
 
 
 These result are saved in below files.
