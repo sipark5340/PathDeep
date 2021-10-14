@@ -65,9 +65,9 @@ Please click [here](https://xenabrowser.net/datapages/?dataset=TcgaTargetGtex_rs
 PathDeep generates three types of files: data and model.
 
 1. Data output file
-   - ```./result/PathDeep_performance.csv```
-   - ```./result/Pathway_contribution_gene_index.csv```
-   - ```./result/pathway_index.csv```
+   - [```./result/PathDeep_performance.csv```](https://github.com/sipark5340/PathDeep/blob/main/README.md#Output-result-files-1)
+   - [```./result/Pathway_contribution_gene_index.csv```](https://github.com/sipark5340/PathDeep/blob/main/README.md#Output-result-files-2,-3)
+   - [```./result/pathway_index.csv```](https://github.com/sipark5340/PathDeep/blob/main/README.md#Output-result-files-2,-3)
 
 2. Model output file
    - ```./result/~.json```
@@ -174,7 +174,7 @@ This part is for ```structuring PathDeep```
 - ```geneset_merged``` : pathway layer (concatanated pathway layer nodes)
 
 
-### Output result files ###
+### Output result files 1 ###
 
 PathDeep generates two types of output files: performance and model.
 
@@ -271,12 +271,12 @@ This part is for calculating ```pathway index```.
 
 
 
-### Output result files ###
+### Output result files 2, 3 ###
 
 
 These result are saved in below files.
 
-   1. pathway contribution gene index
+   2. pathway contribution gene index
       - ```./result/Pathway_contribution_gene_index.csv```
       
       Example)
@@ -289,7 +289,7 @@ These result are saved in below files.
       |CD4|0.779|
       
    
-   2. pathway index
+   3. pathway index
       - ```./result/pathway_index.csv```
 
       |sample|REACTOME_GLYCOGEN_BREAKDOWN_GLYCOGENOLYSIS|REACTOME_TRANSLATION|...|REACTOME_PYRIMIDINE_CATABOLISM|
