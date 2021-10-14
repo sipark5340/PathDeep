@@ -308,7 +308,7 @@ These result are saved in below files.
    
    3. pathway index
       - ```./result/pathway_index.csv```
-      - 
+      
       Example)
       
       |sample|REACTOME_GLYCOGEN_BREAKDOWN_GLYCOGENOLYSIS|REACTOME_TRANSLATION|...|REACTOME_PYRIMIDINE_CATABOLISM|
