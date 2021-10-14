@@ -1,11 +1,9 @@
 ## Contents ##
-* [Description - PathDeep](https://github.com/sipark5340/PathDeep/blob/main/README.md#Description---PathDeep)
-* [Requirements]
-* [Installation]
-* [How to Run]
-    * [Input Files]
-    * [Output Files]
-    * [Run a Demo]
+* [Description - PathDeep](https://github.com/sipark5340/PathDeep/blob/main/README.md#PathDeep-Description)
+* [How to Run](https://github.com/sipark5340/PathDeep/blob/main/README.md#How-to-Run)
+    * [Input Files](https://github.com/sipark5340/PathDeep/blob/main/README.md#Input-Files)
+    * [Output Files](https://github.com/sipark5340/PathDeep/blob/main/README.md#Output-Files)
+    * [Run a Demo](https://github.com/sipark5340/PathDeep/blob/main/README.md#Run-a-Demo)
 * [Data explanation](https://github.com/sipark5340/PathDeep/blob/main/README.md#data-explanation)
 * [PathDeep_example.py explanation](https://github.com/sipark5340/PathDeep/blob/main/README.md#pathdeep_examplepy-code-block-explanation)
     * [Source code block #1](https://github.com/sipark5340/PathDeep/blob/main/README.md#source-code-block-1)
@@ -20,14 +18,12 @@
     * [Output result files](https://github.com/sipark5340/PathDeep/blob/main/README.md#output-result-files-1)
 
 
-# Description - PathDeep
-# PathDeep
+# PathDeep Description
 
 PathDeep is a deep neural network that has biological functional links between gene nodes and pathway nodes which discriminates cancer from normal tissues. The overall scheme of the PathDeep is emphasized in the following figure:
 
 
 ![KakaoTalk_Photo_2021-10-06-14-56-36](https://user-images.githubusercontent.com/51738181/136148176-e36081df-fff0-407b-a564-33ca455b3e0a.png)
-
 
 
 More detailed explaination of the PathDeep can be found in the manuscript.
@@ -45,12 +41,9 @@ Reference of our manuscript
 ---------------------------------------------------------------------------------------------------------------
 
 
+# How to Run
 
-
-
-
-
-## Data explanation for implementing PathDeep ##
+### Input Files
 
 ```./data/Toy_data_for_PathDeep.csv```
 
@@ -65,6 +58,9 @@ Please click [here](https://xenabrowser.net/datapages/?dataset=TcgaTargetGtex_rs
 ```./data/pathways/~.gmt```
 
 -> There are 15 sets of molecular signature collections that contain biological relationship informations.
+
+
+### Output Files
 
 ## ```PathDeep_example.py``` code block explanation ## 
  
