@@ -15,7 +15,7 @@
     * [Source code block #2](https://github.com/sipark5340/PathDeep/blob/main/README.md#source-code-block-2-1)
     * [Source code block #3](https://github.com/sipark5340/PathDeep/blob/main/README.md#source-code-block-3-1)
     * [Output result files](https://github.com/sipark5340/PathDeep/blob/main/README.md#output-result-files-1)
-* [Example of Real world applications](
+
 
 # PathDeep Description
 
