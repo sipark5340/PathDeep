@@ -70,8 +70,17 @@ PathDeep generates three types of files: data and model.
    - [```./result/pathway_index.csv```](https://github.com/sipark5340/PathDeep/blob/main/README.md#Output-result-files-2-3)
 
 2. Model output file
-   - ```./result/~.json```
-   - ```./result/~.h5```
+   - ```./result/~.json```(https://github.com/sipark5340/PathDeep/blob/main/README.md#PathDeep-model-structure,-weight)
+   - ```./result/~.h5```(https://github.com/sipark5340/PathDeep/blob/main/README.md#PathDeep-model-structure,-weight)
+
+
+# Run a Demo
+
+```python
+
+
+
+```
 
 
 ## ```PathDeep_example.py``` code block explanation ## 
