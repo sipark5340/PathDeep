@@ -16,7 +16,7 @@
     * [Source code block #2](https://github.com/sipark5340/PathDeep/blob/main/README.md#source-code-block-2-1)
     * [Source code block #3](https://github.com/sipark5340/PathDeep/blob/main/README.md#source-code-block-3-1)
     * [Output result files](https://github.com/sipark5340/PathDeep/blob/main/README.md#output-result-files-1)
-
+* [Example of Real world applications](
 
 # PathDeep Description
 
@@ -62,24 +62,29 @@ Please click [here](https://xenabrowser.net/datapages/?dataset=TcgaTargetGtex_rs
 
 ### Output Files
 
-PathDeep generates three types of files: data and model.
+PathDeep generates two types of files: data and model.
 
 1. Data output file
    - [```./result/PathDeep_performance.csv```](https://github.com/sipark5340/PathDeep/blob/main/README.md#Output-result-files-1)
-   - [```./result/Pathway_contribution_gene_index.csv```](https://github.com/sipark5340/PathDeep/blob/main/README.md#Output-result-files-2)
-   - [```./result/pathway_index.csv```](https://github.com/sipark5340/PathDeep/blob/main/README.md#Output-result-files-2)
+   - [```./result/Pathway_contribution_gene_index.csv```](https://github.com/sipark5340/PathDeep/blob/main/README.md#Output-result-files-2-3)
+   - [```./result/pathway_index.csv```](https://github.com/sipark5340/PathDeep/blob/main/README.md#Output-result-files-2-3)
 
 2. Model output file
-   - [```./result/~.json```](https://github.com/sipark5340/PathDeep/blob/main/README.md#PathDeep-model-structure)
-   - [```./result/~.h5```](https://github.com/sipark5340/PathDeep/blob/main/README.md#PathDeep-model-structure)
+   - [```./result/~.json```](https://github.com/sipark5340/PathDeep/blob/main/README.md#Output-result-files-1)
+   - [```./result/~.h5```](https://github.com/sipark5340/PathDeep/blob/main/README.md#Output-result-files-1)
 
 
 # Run a Demo
 
+Example input files can be found in the data folder of the PathDeep source.
+Below is an running example of PathDeep and extract gene, pathway index.
+Run Python codes in your command line.
+
+
 ```python
+python PathDeep_example.py
 
-
-
+python Extract_PathDeep_gene_pathway_index.py
 ```
 
 
@@ -307,3 +312,7 @@ These result are saved in below files.
       |TCGA-AB-2859-03|0.2352|1.5673|...|-2.7634|
       |TCGA-CJ-4912-01|0.7242|-1.3764|...|3.3732|
       |GTEX-ZYT6-0926-SM-5GIEM|-0.2674|-2.4731|...|1.7623|
+
+
+# Example of Real world applications
+
