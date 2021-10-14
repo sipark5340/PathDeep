@@ -15,7 +15,7 @@
     * [Source code block #2](https://github.com/sipark5340/PathDeep/blob/main/README.md#source-code-block-2-1)
     * [Source code block #3](https://github.com/sipark5340/PathDeep/blob/main/README.md#source-code-block-3-1)
     * [Output result files 2, 3](https://github.com/sipark5340/PathDeep/blob/main/README.md#Output-result-files-2-3)
-* [Troubleshooting](https://github.com/sipark5340/PathDeep/blob/main/README.md#PathDeep-Description)
+* [Troubleshooting](https://github.com/sipark5340/PathDeep/blob/main/README.md#troubleshooting)
 
 
 # PathDeep Description
@@ -322,4 +322,4 @@ These result are saved in below files.
 
 # Troubleshooting
 
-If you have any troubles running PathDeep algorithm, please contact '''21932001@handong.edu'''  
+If you have any troubles running PathDeep algorithm, please contact 21932001@handong.edu  
