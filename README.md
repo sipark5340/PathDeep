@@ -1,3 +1,26 @@
+## Contents ##
+* [Description]
+* [Requirements]
+* [Installation]
+* [How to Run]
+    * [Input Files]
+    * [Output Files]
+    * [Run a Demo]
+* [Data explanation](https://github.com/sipark5340/PathDeep/blob/main/README.md#data-explanation)
+* [PathDeep_example.py explanation](https://github.com/sipark5340/PathDeep/blob/main/README.md#pathdeep_examplepy-code-block-explanation)
+    * [Source code block #1](https://github.com/sipark5340/PathDeep/blob/main/README.md#source-code-block-1)
+    * [Source code block #2](https://github.com/sipark5340/PathDeep/blob/main/README.md#source-code-block-2)
+    * [Source code block #3](https://github.com/sipark5340/PathDeep/blob/main/README.md#source-code-block-3)
+    * [Output result files](https://github.com/sipark5340/PathDeep/blob/main/README.md#output-result-files)
+* [Extract_PathDeep_gene_pathway_index.py code block explanation](https://github.com/sipark5340/PathDeep/blob/main/README.md#extract_pathdeep_gene_pathway_indexpy-code-block-explanation)
+    * [Source code block #1](https://github.com/sipark5340/PathDeep/blob/main/README.md#source-code-block-1-1
+)
+    * [Source code block #2](https://github.com/sipark5340/PathDeep/blob/main/README.md#source-code-block-2-1)
+    * [Source code block #3](https://github.com/sipark5340/PathDeep/blob/main/README.md#source-code-block-3-1)
+    * [Output result files](https://github.com/sipark5340/PathDeep/blob/main/README.md#output-result-files-1)
+
+
+# Description
 # PathDeep
 
 PathDeep is a deep neural network that has biological functional links between gene nodes and pathway nodes which discriminates cancer from normal tissues. The overall scheme of the PathDeep is emphasized in the following figure:
@@ -18,23 +41,16 @@ Reference of our manuscript
 <
 <
 <
--------------------------------------------------------------------------------------------------------------
-## Contents ##
-* [Data explanation](https://github.com/sipark5340/PathDeep/blob/main/README.md#data-explanation)
-* [PathDeep_example.py explanation](https://github.com/sipark5340/PathDeep/blob/main/README.md#pathdeep_examplepy-code-block-explanation)
-    * [Source code block #1](https://github.com/sipark5340/PathDeep/blob/main/README.md#source-code-block-1)
-    * [Source code block #2](https://github.com/sipark5340/PathDeep/blob/main/README.md#source-code-block-2)
-    * [Source code block #3](https://github.com/sipark5340/PathDeep/blob/main/README.md#source-code-block-3)
-    * [Output result files](https://github.com/sipark5340/PathDeep/blob/main/README.md#output-result-files)
-* [Extract_PathDeep_gene_pathway_index.py code block explanation](https://github.com/sipark5340/PathDeep/blob/main/README.md#extract_pathdeep_gene_pathway_indexpy-code-block-explanation)
-    * [Source code block #1](https://github.com/sipark5340/PathDeep/blob/main/README.md#source-code-block-1-1
-)
-    * [Source code block #2](https://github.com/sipark5340/PathDeep/blob/main/README.md#source-code-block-2-1)
-    * [Source code block #3](https://github.com/sipark5340/PathDeep/blob/main/README.md#source-code-block-3-1)
-    * [Output result files](https://github.com/sipark5340/PathDeep/blob/main/README.md#output-result-files-1)
 
 ---------------------------------------------------------------------------------------------------------------
- ## Data explanation ##
+
+
+
+
+
+
+
+## Data explanation for implementing PathDeep ##
 
 ```./data/Toy_data_for_PathDeep.csv```
 
