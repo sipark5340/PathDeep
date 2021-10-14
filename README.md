@@ -4,7 +4,6 @@
     * [Input Files](https://github.com/sipark5340/PathDeep/blob/main/README.md#Input-Files)
     * [Output Files](https://github.com/sipark5340/PathDeep/blob/main/README.md#Output-Files)
     * [Run a Demo](https://github.com/sipark5340/PathDeep/blob/main/README.md#Run-a-Demo)
-* [Data explanation](https://github.com/sipark5340/PathDeep/blob/main/README.md#data-explanation)
 * [PathDeep_example.py explanation](https://github.com/sipark5340/PathDeep/blob/main/README.md#pathdeep_examplepy-code-block-explanation)
     * [Source code block #1](https://github.com/sipark5340/PathDeep/blob/main/README.md#source-code-block-1)
     * [Source code block #2](https://github.com/sipark5340/PathDeep/blob/main/README.md#source-code-block-2)
