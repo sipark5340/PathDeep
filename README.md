@@ -216,7 +216,7 @@ PathDeep generates two types of output files: performance and model.
 
 ## ```Extract_PathDeep_gene_pathway_index.py``` code block explanation ##
 
-When the Extract_PathDeep_gene_pathway_index.py is executed, user can obtain pathway index and pathway contribution gene index.
+When the Extract_PathDeep_gene_pathway_index.py is executed, you can obtain pathway index and pathway contribution gene index.
 
 
 ### Source code block #1 ###
