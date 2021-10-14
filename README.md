@@ -89,6 +89,8 @@ python PathDeep_example.py
 python Extract_PathDeep_gene_pathway_index.py
 ```
 
+When you run the code, an output file is automatically created in the ./result folder.
+
 
 ## ```PathDeep_example.py``` code block explanation ## 
  
