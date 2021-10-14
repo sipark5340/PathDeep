@@ -49,7 +49,7 @@ Reference of our manuscript
 
 -> This file consist of 100 cancer tissue and 100 normal tissue and reactome member genes.
 
-Please click [here](https://xenabrowser.net/datapages/?dataset=TcgaTargetGtex_rsem_gene_fpkm&host=https%3A%2F%2Ftoil.xenahubs.net&removeHub=https%3A%2F%2Fxena.treehouse.gi.ucsc.edu%3A443) to download total data source.
+Please click [here](https://xenabrowser.net/datapages/?dataset=TcgaTargetGtex_rsem_gene_fpkm&host=https%3A%2F%2Ftoil.xenahubs.net&removeHub=https%3A%2F%2Fxena.treehouse.gi.ucsc.edu%3A443) to download total gene expression source.
 
 ```./data/Train_Test_Sets/Train/~.csv```, ```./data/Train_Test_Sets/Test/~.csv```
 
@@ -61,6 +61,18 @@ Please click [here](https://xenabrowser.net/datapages/?dataset=TcgaTargetGtex_rs
 
 
 ### Output Files
+
+PathDeep generates three types of files: data and model.
+
+1. Data output file
+   - ```./result/PathDeep_performance.csv```
+   - ```./result/Pathway_contribution_gene_index.csv```
+   - ```./result/pathway_index.csv```
+
+2. Model output file
+   - ```./result/~.json```
+   - ```./result/~.h5```
+
 
 ## ```PathDeep_example.py``` code block explanation ## 
  
@@ -83,7 +95,7 @@ To run this code, the pre-requisites are as follow:
 
 ### Source code block #1 ###
 
-```c
+```python
 gene_idx = {}
 for key,values in pathway.items():
     gene_idx[key] = []
@@ -102,7 +114,7 @@ ex) gene_idx = {EGFR : [1], PLA2G10 : [2], ... }
 
 ### Source code block #2 ###
 
-```c
+```python
 subtrains =[]
 subtests = []
 for geneset , idx in gene_idx.items():
@@ -122,7 +134,7 @@ This part makes the gene expression matrix as an ```input shape of PathDeep.```
 
 ### Source code block #3 ###
 
-```c
+```python
 count = 0
 input_items = []
 for geneset , idx in gene_idx.items():
@@ -191,7 +203,7 @@ When the Extract_PathDeep_gene_pathway_index.py is executed, user can obtain pat
 
 ### Source code block #1 ###
 
-```c
+```python
 from keras.models import model_from_json 
 json_file = open("./result/~.json", "r")
 
@@ -210,7 +222,7 @@ This part is for ```loading PathDeep structure and weight```.
 
 ### Source code block #2 ###
 
-```c
+```python
 pcgi_mat=df()
 
 for i in range(len(pathways)):
@@ -240,7 +252,7 @@ This part is for calculating ```pathway contribution gene index```.
 ### Source code block #3 ###
 
 
-```c
+```python
 pathway_layer=Model(inputs=model.inputs,outputs=model.get_layer('concatenate_1').output)
 pathway_index_mat=pathway_layer.predict(subdata)
 
