@@ -1,4 +1,4 @@
-## Contents ##
+# Contents #
 * [Description - PathDeep](https://github.com/sipark5340/PathDeep/blob/main/README.md#PathDeep-Description)
 * [How to Run](https://github.com/sipark5340/PathDeep/blob/main/README.md#How-to-Run)
     * [Input Files](https://github.com/sipark5340/PathDeep/blob/main/README.md#Input-Files)
@@ -17,7 +17,8 @@
     * [Output result files 2, 3](https://github.com/sipark5340/PathDeep/blob/main/README.md#Output-result-files-2-3)
 * [Troubleshooting](https://github.com/sipark5340/PathDeep/blob/main/README.md#troubleshooting)
 
-
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
 # PathDeep Description
 
 PathDeep is a deep neural network that has biological functional links between gene nodes and pathway nodes which discriminates cancer from normal tissues. The overall scheme of the PathDeep is emphasized in the following figure:
