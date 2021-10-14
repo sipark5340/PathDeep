@@ -77,7 +77,9 @@ PathDeep generates two types of files: data and model.
 # Run a Demo
 
 Example input files can be found in the data folder of the PathDeep source.
+
 Below is an running example of PathDeep and extract gene, pathway index.
+
 Run Python codes in your command line.
 
 
