@@ -1,5 +1,5 @@
 ## Contents ##
-* [Description]
+* [Description - PathDeep](https://github.com/sipark5340/PathDeep/blob/main/README.md#Description---PathDeep)
 * [Requirements]
 * [Installation]
 * [How to Run]
@@ -20,7 +20,7 @@
     * [Output result files](https://github.com/sipark5340/PathDeep/blob/main/README.md#output-result-files-1)
 
 
-# Description
+# Description - PathDeep
 # PathDeep
 
 PathDeep is a deep neural network that has biological functional links between gene nodes and pathway nodes which discriminates cancer from normal tissues. The overall scheme of the PathDeep is emphasized in the following figure:
