@@ -68,13 +68,13 @@ Please click [here](https://xenabrowser.net/datapages/?dataset=TcgaTargetGtex_rs
 PathDeep generates two types of files: data and model.
 
 1. Data output files
-   - [```./result/PathDeep_performance.csv```](https://github.com/sipark5340/PathDeep/blob/main/README.md#Output-result-files-1)
-   - [```./result/Pathway_contribution_gene_index.csv```](https://github.com/sipark5340/PathDeep/blob/main/README.md#Output-result-files-2-3)
-   - [```./result/pathway_index.csv```](https://github.com/sipark5340/PathDeep/blob/main/README.md#Output-result-files-2-3)
+   - [```PathDeep performance - ./result/PathDeep_performance.csv```](https://github.com/sipark5340/PathDeep/blob/main/README.md#Output-result-files-1)
+   - [```Pathway contribution gene index - ./result/Pathway_contribution_gene_index.csv```](https://github.com/sipark5340/PathDeep/blob/main/README.md#Output-result-files-2-3)
+   - [```Pathway index - ./result/pathway_index.csv```](https://github.com/sipark5340/PathDeep/blob/main/README.md#Output-result-files-2-3)
 
 2. Model output files
-   - [```./result/~.json```](https://github.com/sipark5340/PathDeep/blob/main/README.md#Output-result-files-1)
-   - [```./result/~.h5```](https://github.com/sipark5340/PathDeep/blob/main/README.md#Output-result-files-1)
+   - [```PathDeep structure - ./result/~.json```](https://github.com/sipark5340/PathDeep/blob/main/README.md#Output-result-files-1)
+   - [```PathDeep weight - ./result/~.h5```](https://github.com/sipark5340/PathDeep/blob/main/README.md#Output-result-files-1)
 
 
 # Run a Demo
